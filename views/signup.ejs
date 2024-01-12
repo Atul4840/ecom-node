@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Signup Page</title>
+</head>
+
+<body class="bg-light">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h3>Sign up</h3>
+                    </div>
+                    <div class="card-body">
+                        <form action="/register" method="POST">
+                            <div class="form-group">
+                                <label for="username">Username:</label>
+                                <input type="text" class="form-control" name="username" id="username" placeholder="Enter your username">
+                            </div>
+                            <div class="form-group">
+                                <label for="username">email:</label>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-group">
+                                <label for="gender">Gender:</label>
+                                <input type="text" class="form-control" name="gender" id="gender" placeholder="Enter your gender">
+                            </div>
+
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="role" id="flexRadioDefault1">
+                                <label class="form-check-label" for="flexRadioDefault1" value="buyer">
+                                  Buyer
+                                </label>
+                              </div>
+                              <div class="form-check">
+                                <input class="form-check-input" type="radio" name="role" id="flexRadioDefault2" checked>
+                                <label class="form-check-label" for="flexRadioDefault2" value="seller">
+                                  Seller
+                                </label>
+                              </div>
+
+                            <div class="form-group">
+                                <label for="password">Password:</label>
+                                <input type="password" class="form-control" name="password" id="password" placeholder="Enter your password">
+                            </div>
+                            <button type="submit" class="btn btn-success btn-block">Sign up</button>
+                        </form>
+                    </div>
+                    <div class="card-footer">
+                        <p class="text-muted text-center">Already have an account? <a href="login">Login</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
